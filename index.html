@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes, user-scalable=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+        <!-- load tick styles -->
+        <link rel="stylesheet" href="tick.css">
+
+
+        <!-- Custom CSS -->
+        <link href="styles.css" rel="stylesheet"/>
+
+        <!-- Other libraries -->
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montez|Nunito:300" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.typekit.net/odl6tit.css">
+
+        <!-- preset page, only needed for demo purposes -->
+        <!--        <link rel="stylesheet" href="preset.css">-->
+
+
+    </head>
+
+    <body>
+
+
+
+
+
+        <nav class="navbar fixed-top navbar-opaque ">
+            <!-- Progress -->
+            <progress value="0" id="progressBar">
+                <div class="progress-container">
+                    <span class="progress-bar"></span>
+                </div>
+            </progress>
+
+            <!--<ul class="nav">
+<li class="nav-item">
+<a class="nav-link active" href="#Bryllupsdagen">Bryllupsdagen</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="#Praktisk">Praktisk Information</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="#Gaester">Gæster</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="#Oensker">Ønsker</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="#Bryllupstraditioner">Bryllupstraditioner</a>
+</li>
+
+
+
+
+</ul>-->
+
+
+            <a class="navbar-brand ml-auto my-2 my-lg-0" href="#top">
+                <img src="assets/Icons/Logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+
+
+
+        </nav>
+
+
+        <!--Jumbo-1-->
+
+        <div class="jumbotron jumbo-1" id="top">
+            <div class="container">
+                <div class="row" >
+                    
+                    <div class="col-sm-3">
+                        <h5>Bryllupdsdagen</h5>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Praktisk information</h5>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Gæster</h5>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Ønsker</h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Bryllupstraditioner</h5>
+                    </div>
+                    
+                </div>
+                <div class="row" >
+                    <div class="col-sm-1">
+
+                    </div>
+
+                    <div class="col-sm-6 nadia">
+                        <h3>Nadia &amp; Kristian</h3>
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Jumbo-2-->
+
+        <div class="jumbotron jumbo-2">
+            <div class="container">
+                <div class="row" >
+                    <div class="col-sm-5">
+
+                    </div>
+
+                    <div class="col-sm-2">
+                        <img class="wiggle" src="assets/wiggleDark.svg" />
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-10">
+                        <p>
+                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+
+                    </div>
+
+                    <div class="col-sm-2" style="">
+                        <img class="wiggle" src="assets/wiggleDark.svg" />
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 5rem;">
+
+
+                <div class="tick"
+                     data-did-init="handleTickInit">
+
+                    <div data-layout="horizontal fill pad"
+                         data-repeat="true"
+                         data-transform="
+                                         rotate(
+                                         transform(
+                                         plural(dag, dage),
+                                         fraction(0, 365),
+                                         input()
+                                         ),
+                                         transform(
+                                         plural(time, timer),
+                                         fraction(0, 24),
+                                         input()
+                                         ),
+                                         transform(
+                                         plural(minut, minutter),
+                                         fraction(0, 60),
+                                         input()
+                                         ),
+                                         transform(
+                                         plural(sekund, sekunder),
+                                         fraction(0, 60),
+                                         input()
+                                         )
+                                         ) ->
+                                         map( keys( label, progress, value ) )">
+
+                        <div class="tick-group" data-layout="overlay">
+
+                            <div data-overlay="center">
+
+                                <div>
+
+                                    <div class="tick-value"
+                                         data-key="value"
+                                         data-view="text"
+                                         data-transform="pad(00)"></div>
+
+                                    <div class="tick-label"
+                                         data-key="label"
+                                         data-view="text"></div>
+
+                                </div>
+
+                            </div>
+
+                            <div data-key="progress"
+                                 data-view="line"
+                                 data-transform="arrive(2.5, 0.1)"
+                                 data-style="
+                                             shape:circle;
+
+                                             align:bottom;
+                                             cap-style:round;
+                                             gap-size:.02; 
+                                             flip: true;
+
+                                             fill-color:#666666; 
+                                             fill-width:.25em; 
+                                             fill-shadow: 0 .425em .125em rgba(0,0,0,.0);
+
+                                             rail-color:vertical-gradient(#bfbfbf, #bfbfbf 50%);
+                                             rail-width:.25em; 
+                                             rail-shadow: 0 .425em .125em rgba(0,0,0,.0);"></div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <script>
+                    function handleTickInit(tick) {
+
+                        var nextYear = new Date("Sep 16, 2018 13:00:00");
+
+                        var counter = Tick.count.down(nextYear);
+
+                        counter.onupdate = function(value) {
+                            tick.value = value;
+                        };
+
+                    }
+                </script>
+            </div>
+
+        </div>
+
+        </div>
+
+    <!--Jumbo-3-->
+
+    <div class="jumbotron jumbo-3" >
+        <div class="container">
+            <div class="row" >
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+
+
+        <!-- //Script for smooth scrolling nav links --->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src = "js/bootstrap.js"></script>
+        <script> //Script for smooth scrolling
+            $(function() {
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1)+']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top-80
+                            }, 500);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+
+
+
+
+
+        <!-- Progress scroller - https://css-tricks.com/reading-position-indicator/ -->
+
+        <script>
+            $(document).ready(function(){
+
+                var getMax = function(){
+                    return $(document).height() - $(window).height();
+                }
+
+                var getValue = function(){
+                    return $(window).scrollTop();
+                }
+
+                if('max' in document.createElement('progress')){
+                    // Browser supports progress element
+                    var progressBar = $('progress');
+
+                    // Set the Max attr for the first time
+                    progressBar.attr({ max: getMax() });
+
+                    $(document).on('scroll', function(){
+                        // On scroll only Value attr needs to be calculated
+                        progressBar.attr({ value: getValue() });
+                    });
+
+                    $(window).resize(function(){
+                        // On resize, both Max/Value attr needs to be calculated
+                        progressBar.attr({ max: getMax(), value: getValue() });
+                    });   
+                }
+                else {
+                    var progressBar = $('.progress-bar'), 
+                        max = getMax(), 
+                        value, width;
+
+                    var getWidth = function(){
+                        // Calculate width in percentage
+                        value = getValue();            
+                        width = (value/max) * 100;
+                        width = width + '%';
+                        return width;
+                    }
+
+                    var setWidth = function(){
+                        progressBar.css({ width: getWidth() });
+                    }
+
+                    $(document).on('scroll', setWidth);
+                    $(window).on('resize', function(){
+                        // Need to reset the Max attr
+                        max = getMax();
+                        setWidth();
+                    });
+                }
+            });
+
+            $(document).ready(function(){
+
+                $('#flat').addClass("active");
+                $('#progressBar').addClass('flat');
+
+
+            });
+
+
+        </script>
+
+        <!-- load tick -->
+        <script src="./tick.js"></script>
+
+        <!--ScrollReview - should be last (readme: https://github.com/jlmakes/scrollreveal/blob/master/README.md)-->
+
+        <script src="scrollReview.js"></script>
+
+        <script>
+            window.sr = ScrollReveal({ reset: true, easing: 'cubic-bezier(0.0, 0.0, 0.2, 1)'});
+            sr.reveal('.wiggle',{ duration: 2000});
+            sr.reveal('.brandMockUp',{ duration: 1000, origin: 'right'});
+            sr.reveal('.UXDesigner',{ duration: 2000});
+            sr.reveal('.roundimg',{ duration: 1000, origin: 'left', rotate: { x: 0, y: 0, z: 10 }});
+        </script>
+
+
+        </body>
+</html>
